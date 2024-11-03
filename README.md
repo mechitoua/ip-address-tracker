@@ -27,10 +27,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-<<<<<<< HEAD
 - Typescript
-=======
->>>>>>> origin/main
 - React
 - tailwindcss
 - leaflet
