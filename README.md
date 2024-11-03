@@ -1,10 +1,10 @@
 # Frontend Mentor - IP address tracker solution
 
 - [Built with](#built-with)
-- [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
+- [Project Links](#links)
 - [Useful resources](#useful-resources)
 - [Author](#author)
+- [How to run the project locally](#how-to-run-the-project-locally)
 
 ### The challenge
 
@@ -29,16 +29,16 @@ Users should be able to:
 - Semantic HTML5 markup
 - Typescript
 - React
-- tailwindcss
-- leaflet
+- Tailwindcss
+- Leaflet
 
 ### Useful resources
 
 - [React](https://reactjs.org/) - JS library
-- [tailwindcss](https://tailwindcss.com/) - For styles
-- [vite](https://vitejs.dev/) - For bundling
-- [leaflet](https://leafletjs.com/) - For map
-- [ipify](https://geo.ipify.org/) - For ip address
+- [Tailwindcss](https://tailwindcss.com/) - For styles
+- [Vite](https://vitejs.dev/) - For bundling
+- [Leaflet](https://leafletjs.com/) - For map
+- [Ipify](https://geo.ipify.org/) - For ip address
 
 ## Author
 
