@@ -7,8 +7,8 @@ export default {
         sans: ['Rubik', 'sans-serif'],
       },
       backgroundImage: {
-        'desk-img': "url('pattern-bg-desktop.png')",
-        'mob-img': "url('pattern-bg-mobile.png')",
+        'desk-img': "url('./pattern-bg-desktop.png')",
+        'mob-img': "url('./pattern-bg-mobile.png')",
       },
     },
   },
