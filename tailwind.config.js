@@ -6,17 +6,9 @@ export default {
       fontFamily: {
         sans: ['Rubik', 'sans-serif'],
       },
-      fontWeight: {
-        reg: 400,
-        med: 500,
-        bld: 700,
-      },
-      colors: {
-        'dark-gray': '#222222',
-        'very-dark-gray': '#1a1a1a',
-      },
-      fontSize: {
-        copy: '18px',
+      backgroundImage: {
+        'desk-img': "url('pattern-bg-desktop.png')",
+        'mob-img': "url('pattern-bg-mobile.png')",
       },
     },
   },
