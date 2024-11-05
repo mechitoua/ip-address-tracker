@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Github Repo URL: [https://github.com/mechitoua/ip-address-tracker](https://github.com/mechitoua/ip-address-tracker)
+- Live Site URL: [https://ip-address-tracker-mechitoua.vercel.app/](https://ip-address-tracker-mechitoua.vercel.app/)
 
 ### Built with
 
@@ -43,6 +43,7 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@mechitoua](https://www.frontendmentor.io/profile/mechitoua)
+- Github - [@mechitoua](https://www.github.com/mechitoua)
 
 - Twitter - [@mechitoua_amine](https://www.twitter.com/mechitoua_amine)
 
