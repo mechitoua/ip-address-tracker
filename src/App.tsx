@@ -27,9 +27,15 @@ function App() {
     setIsLoading(true);
     setError(null);
     try {
+      const ip = /^(\d{1,3}\.){3}\d{1,3}$/.test(ipAddress);
       const apiKey = process.env.IPIFY_API_KEY! as string;
       const response = await axios.get(
-        `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ipAddress}`
+        `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ipAddress}`,
+        {
+          params: {
+            ...(ip ? { ip: ipAddress } : { domain: ipAddress }),
+          },
+        }
       );
       setIpData(response.data);
     } catch (err) {
