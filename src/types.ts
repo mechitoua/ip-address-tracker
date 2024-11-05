@@ -26,3 +26,11 @@ export interface SearchBarProps {
   onSearch: (query: string) => void;
   isLoading?: boolean;
 }
+
+export interface UseIpDataReturn {
+  ipData: IpData | null;
+  isLoading: boolean;
+  error: string | null;
+  fetchUserIp: () => Promise<void>;
+  searchIpOrDomain: (query: string) => Promise<void>;
+}
