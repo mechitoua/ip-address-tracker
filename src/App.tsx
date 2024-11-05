@@ -1,7 +1,7 @@
 import { IpData } from '@/types';
-import { InfoCard } from '@components/InfoCard';
-import { Map } from '@components/Map';
-import { SearchBar } from '@components/SearchBar';
+import InfoCard from '@components/InfoCard';
+import Map from '@components/Map';
+import SearchBar from '@components/SearchBar';
 import axios from 'axios';
 import { useState } from 'react';
 

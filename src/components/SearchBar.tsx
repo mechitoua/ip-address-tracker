@@ -6,10 +6,7 @@ interface SearchBarProps {
   isLoading?: boolean;
 }
 
-export const SearchBar: React.FC<SearchBarProps> = ({
-  onSearch,
-  isLoading,
-}) => {
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch, isLoading }) => {
   const [query, setQuery] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -67,3 +64,5 @@ export const SearchBar: React.FC<SearchBarProps> = ({
     </form>
   );
 };
+
+export default SearchBar;

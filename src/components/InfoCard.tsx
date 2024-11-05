@@ -1,6 +1,6 @@
 import { InfoCardProps } from '@/types';
 
-export const InfoCard: React.FC<InfoCardProps> = ({
+const InfoCard: React.FC<InfoCardProps> = ({
   ipAddress,
   location,
   timezone,
@@ -27,3 +27,5 @@ const InfoItem: React.FC<{ title: string; value: string }> = ({
     <p className='text-2xl font-bold text-slate-950'>{value}</p>
   </div>
 );
+
+export default InfoCard;
