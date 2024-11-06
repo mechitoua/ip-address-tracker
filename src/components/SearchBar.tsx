@@ -1,10 +1,6 @@
+import { SearchBarProps } from '@/types';
 import { ChevronRight, Loader2 } from 'lucide-react';
 import { useState } from 'react';
-
-interface SearchBarProps {
-  onSearch: (query: string) => void;
-  isLoading?: boolean;
-}
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch, isLoading }) => {
   const [query, setQuery] = useState('');

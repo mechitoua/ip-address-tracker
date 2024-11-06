@@ -13,7 +13,7 @@ const Map: React.FC<MapProps> = ({ position }) => {
       zoomControl={true}
       doubleClickZoom={true}
       style={{ height: '100%', width: '100%' }}
-      className='z-0'
+      className='z-0 md:h-screen'
       attributionControl={false}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
