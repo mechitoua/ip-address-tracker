@@ -41,6 +41,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, isLoading }) => {
           />
           <button
             type='submit'
+            aria-label='submit'
             disabled={isLoading || !isValid || !query.trim()}
             className='absolute right-0 h-full px-6 md:px-8 bg-black hover:bg-gray-800 rounded-r-xl
               transition-colors disabled:bg-gray-600 disabled:cursor-not-allowed'>
