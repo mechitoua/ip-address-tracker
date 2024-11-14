@@ -10,6 +10,7 @@ function App() {
 
   useEffect(() => {
     fetchUserIp();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   if (!ipData) {

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { IpData, UseIpDataReturn } from '@/types';
 import axios from 'axios';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 const apiKey = import.meta.env.VITE_IPIFY_API_KEY! as string;
 
@@ -10,7 +10,7 @@ export const useIpData = (): UseIpDataReturn => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const fetchUserIp = async () => {
+  const fetchUserIp = useCallback(async () => {
     setIsLoading(true);
     setError(null);
     try {
@@ -30,7 +30,7 @@ export const useIpData = (): UseIpDataReturn => {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, []);
 
   const searchIpOrDomain = async (query: string) => {
     setIsLoading(true);
