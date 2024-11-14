@@ -3,6 +3,8 @@ import { IpData, UseIpDataReturn } from '@/types';
 import axios from 'axios';
 import { useState } from 'react';
 
+const apiKey = import.meta.env.VITE_IPIFY_API_KEY! as string;
+
 export const useIpData = (): UseIpDataReturn => {
   const [ipData, setIpData] = useState<IpData | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -15,7 +17,7 @@ export const useIpData = (): UseIpDataReturn => {
       const response = await axios.get(
         `https://geo.ipify.org/api/v2/country,city`,
         {
-          params: { apiKey: process.env.IPIFY_API_KEY! as string },
+          params: { apiKey: apiKey },
         }
       );
       setIpData(response.data);
@@ -36,7 +38,7 @@ export const useIpData = (): UseIpDataReturn => {
     try {
       const isIpAddress = /^(\d{1,3}\.){3}\d{1,3}$/.test(query);
       const params = {
-        apiKey: process.env.IPIFY_API_KEY,
+        apiKey: apiKey,
         [isIpAddress ? 'ipAddress' : 'domain']: query,
       };
 
