@@ -14,15 +14,17 @@ function App() {
 
   if (!ipData) {
     return (
-      <div className='min-h-screen bg-gray-100 flex items-center justify-center'>
-        <div className='text-center'>
-          {isLoading ? (
-            <div className='animate-pulse'>Loading your location...</div>
-          ) : error ? (
-            <div className='text-red-500'>{error}</div>
-          ) : null}
+      <main>
+        <div className='min-h-screen bg-gray-100 flex items-center justify-center'>
+          <div className='text-center'>
+            {isLoading ? (
+              <div className='animate-pulse'>Loading your location...</div>
+            ) : error ? (
+              <div className='text-red-500'>{error}</div>
+            ) : null}
+          </div>
         </div>
-      </div>
+      </main>
     );
   }
 
